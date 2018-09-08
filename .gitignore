@@ -1,0 +1,35 @@
+logs
+target
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/RUNNING_PID
+
+# Intellij
+.idea/
+*.iml
+*.iws
+*.class
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
+project/
+
+out/production
+out/artifacts
+*.jar
+
+*.log
+settings.xml
+
+.gradle/
+gradlew
+gradlew.bat
+
+.g8/
