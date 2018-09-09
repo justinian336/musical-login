@@ -40,19 +40,17 @@ $('#submit_login_data').click(function(){
         }
     }
 
-    let standardizedFeatures = standardize(features)
-
     $.ajax({
       type: "POST",
       url: '/login',
       data: {
         "name": $('#name').val(),
         "password": $('#password').val(),
-        "features": standardizedFeatures
+        "features": features
       }
     });
 
-    console.log("features: " + standardizedFeatures)
+    console.log("features: " + features)
 });
 
 $('#reset_train_data').click(function(){

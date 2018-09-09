@@ -41,15 +41,13 @@ $('#submit_train_data').click(function(){
         }
     }
 
-    let standardizedFeatures = standardize(features)
-
     $.ajax({
       type: "POST",
       url: '/train',
       data: {
         "required_word": $('#required_word').val(),
         "typed_word": $('#typed_word').val(),
-        "features": standardizedFeatures
+        "features": features
       }
     });
 
